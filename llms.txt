@@ -1,0 +1,40 @@
+# AI Lab Support and Campus Routing Assistant
+
+> Assistant combining knowledge-base reasoning, constraint-based booking and shortest-path campus routing.
+
+Author: Muhammad Tanveer (Full-Stack AI Automation Engineer)
+Contact: mtanveertahir66@gmail.com | https://www.linkedin.com/in/muhammad-tanveer-advenno/
+Repository: https://github.com/haddindeve/ai-lab-support-campus-routing
+Source availability: implementation held in a private repository; access on request.
+
+## Summary
+A campus assistant has to handle genuinely different question types - eligibility rules, room booking constraints, and navigation - each needing a different technique. One model cannot answer all three correctly.
+
+A router directs each request to the right technique: knowledge-base checks for eligibility, constraint satisfaction for booking feasibility, and weighted shortest-path search for navigation. Each answer comes from the method appropriate to it rather than from one general approximation.
+
+## Stack
+Language: Python, Techniques: Knowledge base, CSP, graph search, Testing: Automated test suite, Interface: Command-line demonstration
+
+## Capabilities
+- Request routing across reasoning techniques
+- Rule-based eligibility validation
+- Constraint-based booking checks
+- Weighted campus shortest-path routing
+- Structured response templates
+
+## Outcomes
+- Each query class answered by the technique suited to it
+- Deterministic, testable behaviour throughout
+
+## FAQ
+Q: Why several techniques instead of one model?
+A: Eligibility, scheduling and routing are different computational problems. A rule base, a CSP solver and a graph search each answer their own correctly.
+
+Q: What is the CSP used for?
+A: Checking whether a requested booking satisfies all room, time and eligibility constraints simultaneously.
+
+Q: How is routing calculated?
+A: Weighted shortest-path search over a graph of campus locations.
+
+Q: Is the code available?
+A: Private repository.
